@@ -1,0 +1,69 @@
+//导入其他SASS文件
+@import "../fn/fn";
+@import "../fn/publicStyle";
+
+//变量的定义
+$base-color:#e6e6e6;
+$base-border:1px #e9e9e9 solid ;
+
+/* 变量的使用*/
+.exmpleDiv{
+	color:$base-color;
+	border:$base-border;
+	.maxDiv{
+		color:$base-color;
+	}
+	.midDiv{
+		color:$base-color;
+	}
+}
+
+/*伪类的使用&*/
+.exmpleDiv_a{
+	width:100px;
+	height:100px;
+	background:#ee6356;
+	&:hover{ background:#fff; }
+
+	body.ie & { background:#fff; }
+}
+
+/*群组选择器*/
+.group{
+	h1,h2,h3{margin-top:10px;}
+}
+
+.group_a,.group_b{
+	h1{padding:10px;}
+}
+
+/*混合器*/
+@include listStyle;
+
+.base{
+	@include baseStyle(10px,11px);
+}
+
+/*继承*/
+.extendMax{
+	width:10px;
+	height:10px;
+}
+.extend{
+	@extend .extendMax;
+	width:12px;
+}
+
+/*循环*/
+@for $i from 1 through 4{
+	.col-#{$i}{
+		width: 25*#{$i}+%;
+		background:url("img-#{$i}");
+	}
+}
+
+@each $man in John,Tony,Bob{
+	.#{$man}-Div{
+		background:url("#{$man}.png");
+	}
+}

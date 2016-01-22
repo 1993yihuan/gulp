@@ -1,0 +1,1 @@
+{"version":3,"sources":["fn/publicStyle.css"],"names":[],"mappings":"AAAA,EACE,QAAS,EACT,OAAQ","file":"fn/publicStyle.css","sourcesContent":["* {\n  padding: 0px;\n  margin: 0px; }\n"],"sourceRoot":"/source/"}
