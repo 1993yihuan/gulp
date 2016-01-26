@@ -2,7 +2,7 @@
 	"name": "heyihuanBower",
 	"version": "1.0.0",
 	"main": [
-		"./html",
+		"./html"
 	],
 	"dependencies": {},
 	"readmeFilename": "README.md",
