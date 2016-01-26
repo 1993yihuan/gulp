@@ -5,7 +5,6 @@
 		"./html/index.html"
 	],
 	"dependencies": {
-		"jquery": "~2.0.3"
 	},
 	"readmeFilename": "README.md",
 	"description": "heyihuan bower beta",
